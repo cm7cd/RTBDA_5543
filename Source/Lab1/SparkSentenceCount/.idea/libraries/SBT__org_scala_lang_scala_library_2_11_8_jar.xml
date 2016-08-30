@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="SBT: org.scala-lang:scala-library:2.11.8:jar" type="Scala">
+    <properties>
+      <compiler-classpath>
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.8.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" />
+      </compiler-classpath>
+    </properties>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar!/" />
+      <root url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" />
+      <root url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/" />
+      <root url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" />
+      <root url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" />
+    </SOURCES>
+    <jarDirectory url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" recursive="false" />
+    <jarDirectory url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" recursive="false" />
+    <jarDirectory url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://C:/spark-2.0.0/assembly/target/scala-2.11/jars" recursive="false" type="SOURCES" />
+  </library>
+</component>
