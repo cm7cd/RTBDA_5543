@@ -1,1 +1,5 @@
-This document contains the instructions about the Lab 1 execution procedure
+#Wiki:
+
+https://github.com/meetsriharsha/RTBDA_5543/wiki/Lab-1---Spark-Sentence-Count
+
+
