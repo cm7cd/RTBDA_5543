@@ -39,16 +39,23 @@ public class FindingClarifaiTags {
 
         for (int i = 0; i < files.length; i++) {
             results = clarifai.recognize(new RecognitionRequest(files[i]));
-
+            String tags = "";
+            int counter = 0;
             for (Tag tag : results.get(0).getTags()) {
+                if(counter>3) break;
                 System.out.println(tag.getName() + ": " + tag.getProbability());
 
-                if (tag.getProbability()> 0.87 && tag.getProbability()< 0.88) {
+                if (tag.getProbability()> 0.95 && tag.getProbability()< 0.99) {
+                    if(tags!="") {
+                        tags = tags + ", " + tag.getName();
+                    }
+                    else tags = tag.getName();
+                    counter++;
                     MBFImage image = ImageUtilities.readMBF(files[i]);
 
-                    image.drawText(tag.getName(), 90, 150, HersheyFont.ASTROLOGY, 20, RGBColour.BLACK);
+                    image.drawText(tags, 20, 50, HersheyFont.ASTROLOGY, 20, RGBColour.ORANGE);
 
-                    DisplayUtilities.displayName(image, "videoFrames");
+                    DisplayUtilities.displayName(image, "Short Video");
 
 
                 }
