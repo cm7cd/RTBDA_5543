@@ -23,10 +23,15 @@
     </exclusions>
 </dependency>
     <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>12.0</version>
+    </dependency>
+    <dependency>
         <groupId>org.apache.storm</groupId>
         <artifactId>storm-core</artifactId>
         <version>1.0.2</version>
-        <!--<scope>provided</scope>-->
+        <scope>provided</scope>
     </dependency>
     <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -56,14 +61,16 @@
             suitable for deployment to a cluster.
              -->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.6</version>
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass></mainClass>
+                            <mainClass>RTBDATopologyStorm</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -81,6 +88,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
