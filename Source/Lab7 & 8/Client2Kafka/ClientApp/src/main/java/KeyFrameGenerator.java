@@ -131,6 +131,12 @@ public class KeyFrameGenerator {
         for(File keyFrame: listOfFiles) {
 //            String msg = EncodeVideo(mainFrame.getPath());
             String msg = ed.EncodeToString(keyFrame.getPath());
+            String fileName = keyFrame.getName();
+            System.out.println("Simple File Name: " + fileName);
+            String fileNameLength = Integer.toString(fileName.length());
+            System.out.println("Simple Filename Length: " + fileNameLength);
+//            msg = "*@#Harsha*@#" +  " " + fileName + " " + msg + "#@*Sri#@*";
+            msg = fileName + " " + msg;
             System.out.println("File Name: " + keyFrame);
             System.out.println("Encoded String: " + msg);
             KeyedMessage<Integer, String> data = new KeyedMessage<Integer, String>(topic, msg);//Encoding the Video

@@ -33,7 +33,7 @@ public class RTBDATopologyStorm {
             builder.setSpout("Keyframe_Collect_Spout", new KafkaSpout(kafkaConf), 4);
 
 //            builder.setSpout("line-reader-spout", new MsgCollectSpout());
-            builder.setBolt("Keyframe_Decoder_Bolt", new MetadataBolt()).shuffleGrouping("Keyframe_Collect_Spout");
+            builder.setBolt("KF_Decoder_Bolt", new KFDecoderBolt()).shuffleGrouping("Keyframe_Collect_Spout");
             builder.setBolt("KF_Mongo_Bolt", new MongoDBBolt()).shuffleGrouping("Keyframe_Collect_Spout");
 
             if (args[1] != null && args[1].length() > 0) {
