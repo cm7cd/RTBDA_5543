@@ -1,7 +1,9 @@
 import jAudioFeatureExtractor.AudioFeatures.*;
 import jAudioFeatureExtractor.jAudioTools.AudioSamples;
 
-
+/**
+ * Created by Mayanka on 20-Mar-16.
+ */
 public class AC {
     public enum AFF {
         Spectral_Centroid(1),
