@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161102170919"/>
+		date="20161102194333"/>
 	<dependencies>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient">
 			<revision name="2.2.0" status="release" pubdate="20131007013723" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="50">
@@ -356,7 +356,7 @@
 				<metadata-artifact status="no" details="" size="2944" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-xc/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.pom"/>
 				<caller organisation="default" name="audioclassification$sources_2.11" conf="provided" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18215" time="426" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.8.3-sources.jar">
+					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18215" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.8.3-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3-sources.jar"/>
 					</artifact>
 					<artifact name="jackson-xc" type="jar" ext="jar" status="no" details="" size="32319" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-xc/jars/jackson-xc-1.8.3.jar">
@@ -372,7 +372,7 @@
 				<metadata-artifact status="no" details="" size="2946" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.pom"/>
 				<caller organisation="default" name="audioclassification$sources_2.11" conf="provided" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11333" time="424" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.8.3-sources.jar">
+					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11333" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.8.3-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3-sources.jar"/>
 					</artifact>
 					<artifact name="jackson-jaxrs" type="jar" ext="jar" status="no" details="" size="17883" time="0" location="/home/harsha/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/jars/jackson-jaxrs-1.8.3.jar">
@@ -784,7 +784,7 @@
 					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="/home/harsha/.ivy2/cache/asm/asm/jars/asm-3.1.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/asm/asm/3.1/asm-3.1.jar"/>
 					</artifact>
-					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="108730" time="909" location="/home/harsha/.ivy2/cache/asm/asm/srcs/asm-3.1-sources.jar">
+					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="108730" time="0" location="/home/harsha/.ivy2/cache/asm/asm/srcs/asm-3.1-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/asm/asm/3.1/asm-3.1-sources.jar"/>
 					</artifact>
 				</artifacts>

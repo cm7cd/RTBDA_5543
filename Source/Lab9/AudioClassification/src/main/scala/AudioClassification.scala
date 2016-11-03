@@ -10,7 +10,7 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.mllib.tree.model.DecisionTreeModel
 import org.apache.spark.{SparkConf, SparkContext}
-
+import org.apache.log4j.{Level, Logger}
 /**
   *Classification of input audio stream.
   */
@@ -25,14 +25,18 @@ object AudioClassification {
 
 
   def main(args: Array[String]) {
-    System.setProperty("hadoop.home.dir", "F:\\winutils")
+
+//    System.setProperty("hadoop.home.dir", "F:\\winutils")
+
     val sparkConf = new SparkConf().setMaster("local[*]").setAppName("SparkDecisionTree").set("spark.driver.memory", "4g")
     val sc = new SparkContext(sparkConf)
+    val rootLogger = Logger.getRootLogger()
+    rootLogger.setLevel(Level.ERROR)
 
     val train = sc.textFile("data/training/FeaturesSet.txt")
     val X_train= train.map ( line =>{
       val parts = line.split(':')
-      println(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
+//      println(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
       LabeledPoint(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
 
     })
@@ -41,7 +45,7 @@ object AudioClassification {
     val test = sc.textFile("data/testing/TestDataSet.txt")
     val X_test= test.map ( f = line => {
       val parts = line.split(':')
-      println(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
+//      println(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
       LabeledPoint(AUDIO_CATEGORIES.indexOf(parts(0)).toDouble, Vectors.dense(parts(1).split(';').map(_.toDouble)))
 
     })
@@ -81,6 +85,7 @@ object AudioClassification {
     println("Accuracy : " + metrics.precision)
     // Save and load model
     model.save(sc, "ContextDecisionTreeClassificationModel")
+    MongoUpload.insertIntoMongoDB(model.toDebugString);
     val sameModel = DecisionTreeModel.load(sc, "ContextDecisionTreeClassificationModel")
     // sameModel.save(sc, "myRandomForestClassificationModel1")
 

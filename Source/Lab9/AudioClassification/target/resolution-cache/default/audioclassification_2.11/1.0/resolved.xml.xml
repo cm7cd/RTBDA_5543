@@ -4,7 +4,7 @@
 		module="audioclassification_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161102170834"
+		publication="20161102194305"
 	>
 		<description>
 		AudioClassification
@@ -34,6 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.json" name="json" rev="20160810" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="1.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="1.6.0" conf="compile->default(compile)"/>

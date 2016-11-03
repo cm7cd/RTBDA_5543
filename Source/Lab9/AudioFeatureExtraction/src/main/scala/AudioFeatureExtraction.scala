@@ -25,10 +25,6 @@ object AudioFeatureExtraction {
 
   val AUDIO_CATEGORIES = List("AmbulanceSiren", "40_smith_wesson_8x_gunshot", "Bomb", "BombSiren", "GlassBreaking", "Grenade")
   def main(args: Array[String]) {
-    //Setting for Windows environment
-//    System.setProperty("hadoop.home.dir", "F:\\winutils")
-//    val sparkConf = new SparkConf().setMaster("local[*]").setAppName("SparkDecisionTree").set("spark.driver.memory", "4g")
-//    val sc = new SparkContext(sparkConf)
     AUDIO_CATEGORIES.foreach(x => AudioFeatureExtraction(x, "data/" + x + ".wav"));
 
 
@@ -71,9 +67,9 @@ object AudioFeatureExtraction {
     val otherFeatures = Array.ofDim[Double](1000, 1000)
     var windowSample: Array[Array[Double]] = null
     val sampleRate1 = audio.getSamplingRateAsDouble
-    println("sampling rate is:" +sampleRate1)
-    println("samples length is:"+ samples.length)
-    println("Frame length is is:"+ audioInputStream.getFrameLength)
+//    println("sampling rate is:" +sampleRate1)
+//    println("samples length is:"+ samples.length)
+//    println("Frame length is is:"+ audioInputStream.getFrameLength)
     for(index<-0 until samples.length){
       i match {
         case AudioFeature.Spectral_Centroid =>

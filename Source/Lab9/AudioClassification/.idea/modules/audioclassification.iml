@@ -34,6 +34,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="SBT: org.json:json:20160810:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-xc:1.8.3:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-jaxrs:1.8.3:jar" level="project" />
     <orderEntry type="library" name="SBT: commons-net:commons-net:2.2:jar" level="project" />
