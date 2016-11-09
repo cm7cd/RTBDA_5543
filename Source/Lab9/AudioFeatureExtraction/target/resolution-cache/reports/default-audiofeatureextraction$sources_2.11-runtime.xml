@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161101201107"/>
+		date="20161107171755"/>
 	<dependencies>
 		<module organisation="org.apache.spark" name="spark-mllib_2.11">
 			<revision name="1.6.0" status="release" pubdate="20151230055917" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="112">
@@ -902,11 +902,11 @@
 				<metadata-artifact status="no" details="" size="72432" time="0" location="/home/harsha/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/spark/spark-streaming_2.11/1.6.0/spark-streaming_2.11-1.6.0.pom"/>
 				<caller organisation="default" name="audiofeatureextraction$sources_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="246255" time="0" location="/home/harsha/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-1.6.0-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/spark/spark-streaming_2.11/1.6.0/spark-streaming_2.11-1.6.0-sources.jar"/>
-					</artifact>
 					<artifact name="spark-streaming_2.11" type="jar" ext="jar" status="no" details="" size="2075251" time="0" location="/home/harsha/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-1.6.0.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/spark/spark-streaming_2.11/1.6.0/spark-streaming_2.11-1.6.0.jar"/>
+					</artifact>
+					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="246255" time="0" location="/home/harsha/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-1.6.0-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/spark/spark-streaming_2.11/1.6.0/spark-streaming_2.11-1.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

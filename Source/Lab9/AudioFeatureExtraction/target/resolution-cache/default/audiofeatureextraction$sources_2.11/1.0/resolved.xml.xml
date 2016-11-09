@@ -4,7 +4,7 @@
 		module="audiofeatureextraction$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161101201106"
+		publication="20161107171753"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
