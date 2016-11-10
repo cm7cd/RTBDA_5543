@@ -25,6 +25,18 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: aopalliance:aopalliance:1.0:jar" level="project" />
     <orderEntry type="module-library">
+      <library name="SBT: unmanaged-jars">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/ACE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/UtilityClasses.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jAudio-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jave-1.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="SBT: unmanaged-sources-and-docs">
         <CLASSES />
         <JAVADOC />
@@ -33,17 +45,6 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.avro/avro-mapred/srcs/avro-mapred-1.7.7-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.mesos/mesos/srcs/mesos-0.21.1-sources.jar!/" />
         </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="SBT: unmanaged-jars">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib/ACE.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../lib/UtilityClasses.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../lib/jAudio-1.0.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="library" name="SBT: xmlenc:xmlenc:0.52:jar" level="project" />
@@ -86,9 +87,7 @@
     <orderEntry type="library" name="SBT: org.codehaus.jettison:jettison:1.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.janino:janino:2.7.8:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.janino:commons-compiler:2.7.8:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-xc:1.8.8:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-jaxrs:1.8.8:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-core-asl:1.9.13:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.zookeeper:zookeeper:3.4.5:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.xbean:xbean-asm5-shaded:4.4:jar" level="project" />
@@ -153,7 +152,6 @@
     <orderEntry type="library" name="SBT: io.dropwizard.metrics:metrics-json:3.1.2:jar" level="project" />
     <orderEntry type="library" name="SBT: io.dropwizard.metrics:metrics-graphite:3.1.2:jar" level="project" />
     <orderEntry type="library" name="SBT: io.dropwizard.metrics:metrics-core:3.1.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-net:commons-net:3.1:jar" level="project" />
     <orderEntry type="library" name="SBT: commons-lang:commons-lang:2.5:jar" level="project" />
     <orderEntry type="library" name="SBT: commons-io:commons-io:2.4:jar" level="project" />
     <orderEntry type="library" name="SBT: commons-httpclient:commons-httpclient:3.1:jar" level="project" />
@@ -195,6 +193,9 @@
     <orderEntry type="library" name="SBT: com.esotericsoftware.minlog:minlog:1.2:jar" level="project" />
     <orderEntry type="library" name="SBT: com.esotericsoftware.kryo:kryo:2.21:jar" level="project" />
     <orderEntry type="library" name="SBT: com.clearspring.analytics:stream:2.7.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: asm:asm:3.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: asm:asm:3.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-net:commons-net:2.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-jaxrs:1.8.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-xc:1.8.3:jar" level="project" />
   </component>
 </module>

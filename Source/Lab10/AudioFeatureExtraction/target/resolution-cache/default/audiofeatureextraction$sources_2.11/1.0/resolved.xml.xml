@@ -4,7 +4,7 @@
 		module="audiofeatureextraction$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161107171753"
+		publication="20161109161714"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -150,16 +150,19 @@
 		<dependency org="com.sun.jersey" name="jersey-server" rev="1.9" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jersey-server" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="asm" name="asm" rev="3.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="asm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="com.sun.jersey" name="jersey-json" rev="1.9" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jersey-json" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.codehaus.jettison" name="jettison" rev="1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jettison" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.codehaus.jackson" name="jackson-jaxrs" rev="1.8.8" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.codehaus.jackson" name="jackson-jaxrs" rev="1.8.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jackson-jaxrs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.codehaus.jackson" name="jackson-xc" rev="1.8.8" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.codehaus.jackson" name="jackson-xc" rev="1.8.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jackson-xc" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.9" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
@@ -234,13 +237,13 @@
 		<dependency org="org.eclipse.jetty.orbit" name="javax.servlet" rev="3.0.0.v201112011016" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="javax.servlet" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-lang3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.apache.commons" name="commons-math3" rev="3.4.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-math3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.10" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.10" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.slf4j" name="jul-to-slf4j" rev="1.7.10" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
@@ -264,7 +267,7 @@
 		<dependency org="org.roaringbitmap" name="RoaringBitmap" rev="0.5.11" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="RoaringBitmap" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="commons-net" name="commons-net" rev="2.2" transitive="false" conf="compile->default(compile);provided->default(compile)">
+		<dependency org="commons-net" name="commons-net" rev="2.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-net" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.typesafe.akka" name="akka-remote_2.11" rev="2.3.11" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
@@ -453,9 +456,6 @@
 		<dependency org="com.sun.xml.fastinfoset" name="FastInfoset" rev="1.2.12" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="FastInfoset" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="commons-net" name="commons-net" rev="3.1" transitive="false" conf="runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="commons-net" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
 		<dependency org="commons-codec" name="commons-codec" rev="1.4" transitive="false" conf="provided->default(compile)">
 			<artifact name="commons-codec" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
@@ -473,12 +473,6 @@
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.2" transitive="false" conf="provided->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.2/">
 			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.apache.commons" name="commons-lang3" rev="3.0" transitive="false" conf="provided->default(compile)">
-			<artifact name="commons-lang3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.2" transitive="false" conf="provided->default(compile)">
-			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>

@@ -11,6 +11,7 @@ import jAudioFeatureExtractor.AudioFeatures._
 import jAudioFeatureExtractor.jAudioTools.AudioSamples
 import org.apache.commons.io.FileUtils
 
+
 /**
   *Feature Extraction from Audio Source
   */
@@ -25,7 +26,12 @@ object AudioFeatureExtraction {
 
   val AUDIO_CATEGORIES = List("AmbulanceSiren", "40_smith_wesson_8x_gunshot", "Bomb", "BombSiren", "GlassBreaking", "Grenade")
   def main(args: Array[String]) {
-    AUDIO_CATEGORIES.foreach(x => AudioFeatureExtraction(x, "data/" + x + ".wav"));
+    val video = new File("data/ATMVideo.mp4");
+    val conv = new ConvertMP4ToWAV();
+    conv.convertToAudio(video);
+
+    AudioFeatureExtraction("ATMVideo", "data/" + video.getName.substring(0, video.getName.lastIndexOf(".")) + ".wav")
+//    AUDIO_CATEGORIES.foreach(x => AudioFeatureExtraction(x, "data/" + x + ".wav"));
 
 
   }

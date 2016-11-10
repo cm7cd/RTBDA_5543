@@ -4,7 +4,7 @@
 		module="audiofeatureextraction_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161101190604"
+		publication="20161109152111"
 	>
 		<description>
 		AudioFeatureExtraction
